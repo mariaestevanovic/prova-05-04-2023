@@ -1,80 +1,99 @@
-.centro {
-    display: block;
-    margin: auto;
- }
- 
- ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-    background-color: rgb(161, 86, 130);
-  }
+*{
+    margin: 0;
+    padding: 0;
+}
 
-li {
-    font-weight: bolder;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-li:hover {
-  background-color: rgb(212, 192, 212);
-  height: 100%;
-  width: 100%;
+nav {
+  background-color: #a04f65;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+nav ul li {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li:not(:nth-last-child(1)) {
+    border-right: 1px solid white;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    background-size: cover;
 }
 
 img {
-    align-content: space-around;
-    display: inline-block;
+    width: 100%;
 }
 
-p {
-    background-color: rgb(161, 86, 130);
-    width: 40%;
-    text-align: center;
-    display: inline-block;
-    
+main {
+    display: flex;
+    background-color: #f2f0e5;
 }
 
-body {
-  background-color: rgb(230, 196, 235);
- }
+section#texto {
+    width: 50%;
+}
 
-.texto {
-  width: 50%;
-  float: left;
-  }
-   
-.imagens {
-     width: 50%;
-     float: right;
+section#texto h1 {
+    color: #a04f65;
+}
 
- }
+section#imagens {
+    width: 50%;
+    padding: 20px;
+}
 
-   
-h4 {
-     font-size: 18px;
-     font-weight: bold;
-     margin-bottom: 20px;
-     color: rgb(58, 57, 57);
-   }
-   
-h1 {
-     font-size: 46px;
-     font-weight: bold;
-     margin-bottom: 20px;
-     color: rgb(58, 57, 57);
- }
+.linha {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagem img {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 2px #a04f65;
+}
+
+.imagem h5 {
+    background-color: #a04f65;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    width: 70%;
+}
 
 footer {
- width: 100%;
- float: inline-end ;
- clear: both;
- bottom: 0;
+    background-color: #a04f65;
+    padding: 20px;
 }
